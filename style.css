@@ -1,0 +1,18 @@
+body{
+    font-family: 'Times New Roman', Times, serif ;
+}
+
+h1 {
+    background-color: darkslategrey;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+}
+.btn {
+    background-color: lightskyblue;
+}
