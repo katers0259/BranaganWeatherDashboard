@@ -16,3 +16,7 @@ h2 {
 .btn {
     background-color: lightskyblue;
 }
+
+#weather-card {
+    background-color: skyblue;
+}

@@ -22,24 +22,72 @@
                         <h2>Search your city</h2>
                         <input id="search" class="form-control mr-sm-2" type="search" placeholder="Location" aria-label="Search">
                         <button class="btn"><i class="fas fa-search"></i></button>
+                       <br>
+                        <div class="cityList">
+                        
+                                <a></a>
+                        </div>
                     </form>
-                </div>
+                    
+            </div>
                 <div class="col-md-9">
                     <div class="card">
                         <div class="card-body">
                             <div class="weather">
                                 <ul>
-                                    <li id="city" class="clear"></li>
-                                    <li id="temp"  class="clear"></li>
-                                    <li id="humidity"  class="clear"></li>
-                                    <li id="wind"  class="clear"></li>
-                                    <li id="uvIndex" class="clear"></li>
+                                    <div id="city" class="clear"></div>
+                                    <div id="temp"  class="clear"></div>
+                                    <div id="humidity"  class="clear"></div>
+                                    <div id="wind"  class="clear"></div>
+                                    <div id="uvIndex" class="clear"></div>
                                 <!-- weather information from search goes here -->
                                 </ul>
                                 <div id="weatherBox"><h2>5 Day Forecast: </h2>
                                     <!-- weather boxes go here -->
+                                    <div class="row">
+                                    <div class="card">
+                                        <div class="card-body" id="weather-card-0">
+                                            <div id="date-0"></div>
+                                            <img id="icon-0">
+                                            <div id="temp-0"  class="clear"></div>
+                                            <div id="humidity-0"  class="clear"></div>
+                                        </div>
+                                      </div>
+                                      <div class="card">
+                                        <div class="card-body" id="weather-card-1">
+                                            <div id="date-1"></div>
+                                            <img id="icon-1">
+                                            <div id="temp-1"  class="clear"></div>
+                                            <div id="humidity-1"  class="clear"></div>
+                                        </div>
+                                      </div>
+                                      <div class="card">
+                                        <div class="card-body" id="weather-card-2">
+                                            <div id="date-2"></div>
+                                            <img id="icon-2">
+                                            <div id="temp-2"  class="clear"></div>
+                                            <div id="humidity-2"  class="clear"></div>
+                                        </div>
+                                      </div>
+                                      <div class="card">
+                                        <div class="card-body" id="weather-card-3">
+                                            <div id="date-3"></div>
+                                            <img id="icon-3">
+                                            <div id="temp-3"  class="clear"></div>
+                                            <div id="humidity-3"  class="clear"></div>
+                                        </div>
+                                      </div>
+                                      <div class="card">
+                                        
+                                        <div class="card-body" id="weather-card-4">
+                                            <div id="date-4"></div>
+                                            <img id="icon-4">
+                                            <div id="temp-4"  class="clear"></div>
+                                            <div id="humidity-4"  class="clear"></div>
+                                        </div>
+                                      </div>
                                 </div>
-                                
+                            </div>
                             </div>
 
                         </div>
@@ -54,6 +102,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/1b8fabd2b1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
 </body>
 
