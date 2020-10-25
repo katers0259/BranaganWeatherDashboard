@@ -1,24 +1,13 @@
 $(document).ready(function () {
 
-
-
-
-  
- var userInput = [];
-  var list = $(this).attr(".cityList")
-  var search = $(this).attr("#search");
-  localStorage.setItem(search, list);
-  var cityList = localStorage.getItem('search');
-  
-
-  // done make api call
+  // make api call
   // get the array 
   // display array 
   //store user inputs in lcal storage
   //display and keep searches from local storage
   //make searches clickable and bring back the data from that search
   //display 5 day forecast 
-  //   // display current weather above 5 day forecast
+  // display current weather above 5 day forecast
   function currentWeather(response) {
     var lat = response.city.coord.lat
     var lon = response.city.coord.lon
@@ -42,24 +31,24 @@ $(document).ready(function () {
         if (uv < 3) {
           $("#uvIndex").addClass("p-3 mb-2 bg-success text-white");
         }
-         else {
+        else {
           $("#uvIndex").addClass("p-3 mb-2 bg-danger text-white");
         };
-        for (let i = 0; i < response.daily.length; i++){
-        
-        console.log(response.daily)
-        console.log(i)
-      var time = moment(response.daily[i].dt * 1000).format('DD MMM YYYY')
-      console.log(time)
+        for (let i = 0; i < response.daily.length; i++) {
 
-       $(`date-${i}`).text("Date: ", time);
-       $(`#icon-${i}`).attr("src", "http://openweathermap.org/img/wn/" + response.daily[i].weather[0].icon + "@2x.png")
-        $(`#humidity-${i}`).text("Humidity: " + String(response.daily[i].humidity + "%"))
-        $(`#temp-${i}`).text("Tempurature: " + String(response.daily[i].temp.day + "F"))
+          console.log(response.daily)
+          console.log(i)
+          var time = moment(response.daily[i].dt * 1000).format('DD MMM YYYY')
+          console.log(time)
+
+          $(`#date-${i}`).append("Date: ", time);
+          $(`#icon-${i}`).attr("src", "http://openweathermap.org/img/wn/" + response.daily[i].weather[0].icon + "@2x.png")
+          $(`#humidity-${i}`).text("Humidity: " + String(response.daily[i].humidity + "%"))
+          $(`#temp-${i}`).text("Tempurature: " + String(response.daily[i].temp.day + "F"))
         }
       })
   };
-
+ 
 
 
   $(".btn").on("click", function (e) {

@@ -10,8 +10,14 @@ h1 {
     padding-bottom: 20px;
 }
 
+
+
 h2 {
     font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    font-weight: bolder;
 }
 .btn {
     background-color: lightskyblue;
