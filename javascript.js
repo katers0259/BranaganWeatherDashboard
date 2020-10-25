@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 
   
- 
+ var userInput = [];
   var list = $(this).attr(".cityList")
   var search = $(this).attr("#search");
   localStorage.setItem(search, list);
